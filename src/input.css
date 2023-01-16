@@ -5,6 +5,11 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
+/* Whatsapp */
+.fix {
+  position: fixed;
+}
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
