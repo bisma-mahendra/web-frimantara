@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    
     <title>Frimantara</title>
+
 </head>
 <body class="bg-white">
-    <!-- Pop WA Button -->
-    
+
     <!-- Navbar -->
+    <div id="watsap" class="right-4 bottom-4 z-40 fixed flex">
+        <a href="https://wa.me/6282112131830"  class="bg-greenSecond flex text-center baseline items-center lg:text-xl px-3 py-3 lg:px-3 lg:py-3 rounded-full font-semibold  hover:bg-greenPrime transition  duration-300 ease-in text-white" target="_blank"> 
+            <img src="src/whatsapp-line.svg" alt="whatsap" class="w-8 lg:w-10">
+        </a>
+    </div>
+
     <div class="bg-darkGreen pb-20">
-        <nav class="relative container items-center bg-darkGreen mx-auto p-6">
+        <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 w-full flex items-center z-10 shadow-md">
+        <nav class="relative container items-center mx-auto px-6 py-2">
+            <div class="container">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <a href="#" class="">
-                    <div class="flex items-center text-white justify-between font-semibold text-xl">
-                        <img src="src/logo/logo-white.svg" alt="" width="48px" class="text-white">
+                    <div class="flex items-center text-greenPrime justify-between font-semibold text-xl">
+                        <img src="src/logo/logo.svg" alt="" width="48px" class="text-greenPrime">
                         Frimantara
                     </div>
                 </a>
                 <!-- menu -->
-                <div class="hidden md:flex space-x-8 lg:space-x-14 text-gray-300 font-normal text-sm lg:text-base">
-                    <a class="hover:text-white" href="#">Home</a>
-                    <a class="hover:text-white" href="#product">Product</a>
-                    <a class="hover:text-white" href="#">Features</a>
-                    <a class="hover:text-white" href="#about">About Us</a>
-                    <a class="hover:text-white" href="#faq">FAQ</a>
+                <div class="hidden md:flex space-x-8 lg:space-x-14 text-greenPrime font-normal text-sm lg:text-base">
+                    <a class="nav-hover" href="index.html">Home</a>
+                    <a class="nav-hover" href="#product">Product</a>
+                    <a class="nav-hover" href="#whyus">Features</a>
+                    <a class="nav-hover" href="#about">About Us</a>
+                    <a class="nav-hover" href="#faq">FAQ</a>
                 </div>
                 <!-- CTA -->
                 <div class="hidden md:flex" >
@@ -44,9 +52,9 @@
                 <!-- Mobile Menu -->
                 <div class="md:hidden">
                     <div id="menu" class="absolute flex-col items-center hidden justify-center self-end py-8 mt-10 space-y-6  bg-darkGreen border border-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md rounded-xl">
-                        <a class="text-white" href="#">Home</a>
+                        <a class="text-white" href="index.html">Home</a>
                         <a class="text-white" href="#product">Product</a>
-                        <a class="text-white" href="#">Features</a>
+                        <a class="text-white" href="#whyus">Features</a>
                         <a class="text-white" href="#about">About Us</a>
                         <a class="text-white" href="#faq">FAQ</a>
                     </div>
@@ -59,153 +67,386 @@
                     <span class="hamburger-bottom"></span>
                 </button>
             </div>
+            </div>
         </nav>
-    
-    <!-- Navbar End -->
+        </header>
+        <!-- Navbar End -->
 
-    <!-- Hero Section -->
-        <section id="hero">
-            <div class="flex flex-col-reverse container items-center justify-between md:flex-row px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+        <!-- Hero Section -->
+        <section id="hero" class="justify-center items-center pt-10">
+            <div class="container px-6 lg:pl-12 mx-auto mt-10 flex flex-col-reverse items-center md:flex-row lg:justify-evenly space-y-0 md:space-y-0">
                 <!-- Tagline, Des, CTA -->
-                <div class="container flex flex-col my-10 space-y-5 md:w-1/2 lg:space-y-10  text-white">
+                <div class="container flex flex-col my-2 space-y-5 md:w-1/2 lg:space-y-10  text-white">
                     <h1 class="font-bold text-center text-4xl md:text-left lg:text-7xl">Send Best Cassava To You</h1>
-                    <p class="max-w-lg text-center md:text-left leading-relaxed lg:leading-10 lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis fusce in natoque eget quis leo, sed praesent mauris.</p>
+                    <p class="max-w-lg text-center md:text-left leading-relaxed lg:leading-10 lg:text-2xl">We provide the best cassava products from experienced farmers on the island of Sumatra, Indonesia</p>
                     <div class="flex justify-center md:justify-start" >
-                        <a href="#" class="bg-greenSecond flex text-center baseline items-center lg:text-xl px-6 py-3 lg:px-9 lg:py-5 rounded-full font-semibold gap-2.5 hover:bg-greenPrime transition  duration-300 ease-in text-white"> 
+                        <a href="https://wa.me/082398687189" class="bg-greenSecond flex text-center baseline items-center lg:text-xl px-6 py-3 lg:px-9 lg:py-5 rounded-full font-semibold gap-2.5 hover:bg-greenPrime transition  duration-300 ease-in text-white"> 
                             <img src="src/whatsapp-line.svg" alt="whatsap" class="lg:w-8">
                             <p>Contact Us</p>
                         </a>
                     </div>
                 </div>
                 <!-- Hero Image -->
-                <div class="mb-10 flex justify-center ">
-                    <img src="src/Rectangle 34.svg" alt="singkong" width="1000px" class="flex w-3/4 xl:w-4/5">
-                </div>
+                <img src="src/hero2.png" alt="singkong" width="1000px" class="md:w-1/2">
+                <!-- <div class="bg-white container mb-10 flex justify-center lg:justify-end ">
+                </div> -->
             </div>
         </section>  
-    <!-- Hero Ends -->
+        <!-- Hero Ends -->
     </div>
     
-    <!-- Products -->
-    <section id="product" class=" my-10 lg:my-24 items-center justify-center ">
-        <h1 class="font-bold text-3xl text-center md:text-4xl">Our Product</h1>
-        <div class=" flex flex-col items-center mt-10 space-y-20 justify-center md:mt-14 md:space-y-0 lg:gap-20">
-            <div class=" flex flex-col px-6 mx-auto items-center justify-between md:gap-10 lg:gap-16 md:px-8 md:flex-row ">
-                <!-- Image -->
-                <div class="mb-10 items-center flex justify-center md:mb-0 md:w-1/2  md:justify-end ">
-                    <img src="src/Rectangle 34.svg" alt="singkong" width="" class="flex w-3/4 xl:w-4/5">
+
+    <!-- About Us -->
+    <section id="about" class="bg-gradient-to-b from-white to-green-100 py-4 lg:py-16 my-10 lg:my-16">
+        <div class="container flex flex-col px-6 mx-auto my-10 space-y-8 justify-center item-center md:space-y-20">
+            <div class="flex flex-col gap-6">
+                <h2 class=" text-black1 font-bold text-center text-3xl md:text-4xl ">About Us</h2>
+                <div class="flex flex-col px-6 mx-auto items-center justify-between md:gap-10 lg:gap-16 md:px-8 md:flex-row lg:mt-0">
+                    <!-- Image -->
+                    <div class=" items-center flex justify-center md:w-1/2  md:justify-end ">
+                        <img src="src/logo/logo.svg" alt="frimantara" width="100px" class="flex">
+                        <h2 class="font-bold text-2xl md:text-3xl lg:text-4xl md:w-1/2 text-black1">PT. Frimantara Agrinatural</h2>
+                    </div>
+                    <div class=" flex space-y-4 lg:space-y-8 text-center mt-5 md:mt-0 md:w-1/2 md:text-left">
+                        <p class="max-w-full text-lg leading-relaxed lg:leading-relaxed lg:text-xl text-black3">Frimantara Agrinatural is an exporter of cassava and its derivatives that works with farmers and local communities, Sumatra to become suppliers of quality ingredients abroad</p>
+                    </div>
+                    <!-- Description -->
                 </div>
-                <div class=" flex flex-col space-y-4 text-center md:w-1/2 md:text-left">
-                    <h2 class="font-semibold text-2xl md:text-3xl lg:text-4xl text-black1">Product Name</h2>
-                    <p class="max-w-lg leading-relaxed lg:leading-relaxed lg:text-2xl text-black3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur fugit adipisci dolorum similique molestiae maxime dolorem nam neque ab?</p>
-                </div>
-                <!-- Description -->
             </div>
-            <div class=" flex flex-col-reverse px-6 mx-auto items-center justify-between lg:gap-16 md:px-8 md:flex-row">
-                <div class=" md:w-1/2 md:justify-end flex flex-col text-center items-end md:text-left">
-                    <div class="space-y-4 justify-end">
-                        <h2 class="font-semibold text-2xl lg:text-4xl text-black1">Product Name</h2>
-                        <p class="max-w-lg leading-relaxed lg:leading-relaxed lg:text-2xl text-black3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur fugit adipisci dolorum similique molestiae maxime dolorem nam neque ab?</p>
+                <div class="text-center flex flex-col item-center justify-center gap-6">
+                    <div class="flex justify-center ">
+                        <h3 class="py-2 px-6 pt-3 bg-greenPrime rounded-full font-bold text-xl text-greenTertiary">Vision</h3>
+                    </div>
+                    <div class="flex justify-center text-center">
+                        <p class="text-black2 font-bold text-lg lg:text-3xl md:w-1/2">Develop and increase the potential of local farmers in the international market</p>
                     </div>
                 </div>
-                <div class=" mb-10 items-center flex justify-center md:mb-0 md:w-1/2  md:justify-start ">
-                    <img src="src/Rectangle 34.svg" alt="singkong" width="" class="flex w-3/4 xl:w-4/5">
+                <div class=" text-center flex flex-col item-center justify-center gap-10">
+                    <div class="flex justify-center ">
+                        <h3 class="py-2 px-6 pt-3 bg-greenPrime rounded-full font-bold text-xl text-greenTertiary">Mission</h3>
+                    </div>
+                    <div class="flex flex-col gap-6 lg:gap-8">
+                        <div class="flex text-left gap-3 md:gap-4">
+                        <h1 class="text-4xl font-bold text-greenPrime md:text-6xl">1</h1>
+                        <p class="text-black2 lg:text-xl md:w-1/3">Selecting the best products from farmers for export</p>
+                        </div>
+                        <div class="flex text-left gap-3 md:gap-4 md:justify-center">
+                        <h1 class="text-4xl font-bold text-greenPrime md:text-6xl">2</h1>
+                        <p class="text-black2 lg:text-xl md:w-1/3">Empower farmers and surrounding communities in processed products</p>
+                        </div>
+                        <div class="flex text-left gap-3 md:gap-4 md:justify-end">
+                        <h1 class="text-4xl font-bold text-greenPrime md:text-6xl">3</h1>
+                        <p class="text-black2 lg:text-xl md:w-1/3">Build good and trusting relationships with partners/buyers</p>
+                        </div>
+                    </div>
                 </div>
-            </div> 
-            <div class=" flex flex-col px-6 mx-auto items-center justify-between md:gap-10 lg:gap-16 md:px-8 md:flex-row">
-                <!-- Image -->
-                <div class="mb-10 items-center flex justify-center md:mb-0 md:w-1/2  md:justify-end ">
-                    <img src="src/Rectangle 34.svg" alt="singkong" width="" class="flex w-3/4 xl:w-4/5">
+        </div>
+    </section>
+    <!-- About Us End-->
+
+    <!-- Products -->
+    <section id="product" class="my-10 md:my-16 lg:py-16 items-center justify-center ">
+        <h1 class="font-bold text-3xl text-center md:text-4xl mt-8">Our Product</h1>
+        <div class="container my-4 lg:my-10 mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 lg:gap-16 sm:justify-between md:justify-center lg:justify-center">
+            <div class="product-card">
+              <img src="https:/source.unsplash.com/random/600x600/?flour" alt="Image Caption" class="w-full" />
+              <div class="p-4 py-6 space-y-3">
+                <div class="text-black1 font-bold text-xl">Modified Cassava Flour</div>
+                <p class="w-full leading-relaxed text-truncate text-sm lg:text-base text-black3">Mocaf flour is a flour made from cassava or cassava which is modified by using microbial fermentation techniques.</p>
+                <div>
+                <a href="product1-detail.html" class="">
+                    <div class="detail-btn">
+                    <p class="text-white font-semibold">See Details</p>
+                    </div>
+                </a>
                 </div>
-                <div class=" flex flex-col space-y-4 text-center md:w-1/2 md:text-left">
-                    <h2 class="font-semibold text-2xl lg:text-4xl text-black1">Product Name</h2>
-                    <p class="max-w-lg leading-relaxed lg:leading-relaxed lg:text-2xl text-black3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur fugit adipisci dolorum similique molestiae maxime dolorem nam neque ab?</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https:/source.unsplash.com/random/600x600/?snacks" alt="Image Caption" class="w-full" />
+              <div class="p-4 py-6 space-y-3">
+                <div class="text-black1 font-bold text-xl">Chili Cassava Crackers</div>
+                <p class="w-full leading-relaxed text-truncate text-sm lg:text-base text-black3">Cassava chips peeled or unpeeled are used for anomal food, ethanol for making biofuel, and starch.</p>
+                <div>
+                <a href="" class="">
+                    <div class="detail-btn">
+                    <p class="text-white font-semibold">See Details</p>
+                    </div>
+                </a>
                 </div>
-                <!-- Description -->
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https:/source.unsplash.com/random/600x600/?chips" alt="Image Caption" class="w-full" />
+              <div class="p-4 py-6 space-y-3">
+                <div class="text-black1 font-bold text-xl">Fried Cassava Chips</div>
+                <p class="w-full leading-relaxed text-truncate text-sm lg:text-base text-black3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos?</p>
+                <div>
+                <a href="" class="">
+                    <div class="detail-btn">
+                    <p class="text-white font-semibold">See Details</p>
+                    </div>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https:/source.unsplash.com/random/600x600/?cassava" alt="Image Caption" class="w-full" />
+              <div class="p-4 py-6 space-y-3">
+                <div class="text-black1 font-bold text-xl">Fresh Cassava Roots</div>
+                <p class="w-full leading-relaxed text-truncate text-sm lg:text-base text-black3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos?</p>
+                <div>
+                <a href="" class="">
+                    <div class="detail-btn">
+                    <p class="text-white font-semibold">See Details</p>
+                    </div>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="https:/source.unsplash.com/random/600x600/?fried" alt="Image Caption" class="w-full" />
+              <div class="p-4 py-6 space-y-3">
+                <div class="text-black1 font-bold text-xl">Fried Banana Chips</div>
+                <p class="w-full leading-relaxed text-truncate text-sm lg:text-base text-black3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos?</p>
+                <div>
+                <a href="" class="">
+                    <div class="detail-btn">
+                    <p class="text-white font-semibold">See Details</p>
+                    </div>
+                </a>
+                </div>
+              </div>
             </div>
         </div>
     </section>
     <!-- Products Ends-->
 
     <!-- Whyus -->
-    <section id="whyus" class="bg-bgPage py-4 lg:py-16 my-10 lg:my-24">
-        <div class="container flex flex-col px-6 mx-auto my-10 space-y-10 justify-center  items-center md:items-start md:space-y-0 md:flex-row">
-            <!-- Header -->
-            <div class="flex flex-col space-y-2 lg:space-y-5 md:w-1/2">
-                <h2 class="max-w-md text-black1 font-bold text-center text-3xl md:text-left md:text-4xl">Why You Choose Us</h2>
-                <p class="max-w-md text-center  text-black3 leading-relaxed md:text-left lg:leading-relaxed text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum!</p>
+    <section id="whyus" class="bg-gradient-to-r from-green-600 to-greenPrime justify-center items-center py-10 lg:pt-20 lg:pb-14">
+        <h2 class="text-white px-6 text-center font-bold text-3xl md:text-4xl md:mb-8">Why You Choose Us</h2>
+            <div id="first" class="block">
+            <div class="container flex flex-col items-center justify-center">
+                <div id="item1" class="container slider-card">
+                    <img src="https:/source.unsplash.com/random/600x500/?agreement" alt="commit" width="" class="md:w-1/2 lg:w-1/3 rounded-xl shadow-xl">
+                    <div class="space-y-4 lg:space-y-8 mt-10 md:mt-0">
+                        <!-- List 1 -->
+                        <div class="space-y-4 max-w-md">
+                            <div class="flex space-x-2 items-center justify-center md:justify-start">
+                                <div class="p-2 bg-greenPrime rounded-full shadow-white shadow-sm">
+                                    <img src="src/focus-2-fill.svg" alt="comitment" class="lg:w-8 fill-current">
+                                </div>
+                                <h3 class="text-xl font-semibold text-white">Comitment</h3>
+                            </div>
+                            <p class="text-center text-white leading-relaxed px-6 md:px-0 md:text-left lg:text-lg">Committed in all aspects to getting and retaining clients, we do not only think about profit but the satisfaction and welfare of our partners is the main thing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-8 items-center">
+                    <button id="kiri1" class="btn-arrow ">
+                        <img src="src/chevron-left.svg" alt="left">
+                    </button>
+                    <div id="lingkaran" class="flex gap-2 items-center">
+                        <div class="p-2 bg-white rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                    </div>
+                    <button id="kanan1" class="btn-arrow">
+                    <img src="src/chevron-right.svg" alt="right">
+                    </button>
+                </div>
             </div>
-            <!-- Number of list -->
-            <div class="flex flex-col my-4 md:my-0 space-y-6">
-                <!-- List 1 -->
-                <div class="space-y-4 max-w-md">
-                    <div class="flex space-x-2 items-center justify-center md:justify-start">
-                        <div class="p-2 bg-greenPrime  rounded-full ">
-                            <img src="src/whatsapp-line.svg" alt="whatsap" class="lg:w-8 text-black fill-current">
+            </div>
+
+            <div id="second" class="hidden">
+            <div class="container flex flex-col items-center justify-center">
+                <div id="item2" class="container slider-card">
+                    <img src="https:/source.unsplash.com/random/600x500/?quality" alt="quality" width="" class="md:w-1/2 lg:w-1/3 rounded-xl shadow-xl">
+                    <div class="space-y-4 lg:space-y-8 mt-10 md:mt-0">
+                        <!-- List 2 -->
+                        <div class="space-y-4 max-w-md">
+                            <div class="flex space-x-2 items-center justify-center md:justify-start">
+                                <div class="p-2 bg-greenPrime rounded-full shadow-white shadow-sm">
+                                    <img src="src/checkbox-circle-line.svg" alt="check" class="lg:w-8 fill-current">
+                                </div>
+                                <h3 class="text-xl font-semibold text-white">Quality</h3>
+                            </div>
+                            <p class="text-center text-white leading-relaxed px-6 md:px-0 md:text-left lg:text-lg">We provide and select the best products from local farmers which we always monitor the quality, and provide more services (custom) by request if there is a request from the buyer.</p>
                         </div>
-                        <h3 class="text-xl font-semibold">Quality</h3>
                     </div>
-                    <p class="text-center text-black3 leading-relaxed px-6 md:px-0 md:text-left">Lorem, ipsum dolor dsit amet consectetur adipisicing elit. Odit odio veniam suscipit quo, omnis rem impedit recusandae unde dolor aperiam?</p>
                 </div>
-                <!-- List 2 -->
-                <div class="space-y-4 max-w-md">
-                    <div class="flex space-x-2 items-center justify-center md:justify-start">
-                        <div class="p-2 bg-greenPrime  rounded-full ">
-                            <img src="src/whatsapp-line.svg" alt="whatsap" class="lg:w-8 text-black fill-current">
-                        </div>
-                        <h3 class="text-xl font-semibold">Cheap</h3>
+                <div class="flex gap-8 items-center">
+                    <button id="kiri2" class="btn-arrow ">
+                        <img src="src/chevron-left.svg" alt="left">
+                    </button>
+                    <div id="lingkaran" class="flex gap-2 items-center">
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-white rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
                     </div>
-                    <p class="text-center text-black3 leading-relaxed px-6 md:px-0 md:text-left">Lorem, ipsum dolor dsit amet consectetur adipisicing elit. Odit odio veniam suscipit quo, omnis rem impedit recusandae unde dolor aperiam?</p>
+                    <button id="kanan2" class="btn-arrow">
+                    <img src="src/chevron-right.svg" alt="right">
+                    </button>
                 </div>
-                <!-- List 3 -->
-                <div class="space-y-4 max-w-md">
-                    <div class="flex space-x-2 items-center justify-center md:justify-start">
-                        <div class="p-2 bg-greenPrime  rounded-full ">
-                            <img src="src/whatsapp-line.svg" alt="whatsap" class="lg:w-8 text-black fill-current">
+            </div>
+            </div>
+
+            <div id="third" class="hidden">
+                <div class="container flex flex-col items-center justify-center">
+                <div id="item3" class="container slider-card">
+                    <img src="https:/source.unsplash.com/random/600x500/?talk" alt="talk" width="" class="md:w-1/2 lg:w-1/3 rounded-xl shadow-xl">
+                    <div class="space-y-4 lg:space-y-8 mt-10 md:mt-0">
+                        <!-- List 3 -->
+                        <div class="space-y-4 max-w-md">
+                            <div class="flex space-x-2 items-center justify-center md:justify-start">
+                                <div class="p-2 bg-greenPrime rounded-full shadow-white shadow-sm">
+                                    <img src="src/discuss-line.svg" alt="discus" class="lg:w-8 fill-current">
+                                </div>
+                                <h3 class="text-xl font-semibold text-white">Interactive</h3>
+                            </div>
+                            <p class="text-center text-white leading-relaxed px-6 md:px-0 md:text-left lg:text-lg">We communicate via telephone and messages or other convenient media to hear what buyers need regarding products and delivery.</p>
                         </div>
-                        <h3 class="text-xl font-semibold">Quality</h3>
                     </div>
-                    <p class="text-center text-black3 leading-relaxed px-6 md:px-0 md:text-left">Lorem, ipsum dolor dsit amet consectetur adipisicing elit. Odit odio veniam suscipit quo, omnis rem impedit recusandae unde dolor aperiam?</p>
+                </div>
+                <div class="flex gap-8 items-center">
+                    <button id="kiri3" class="btn-arrow ">
+                        <img src="src/chevron-left.svg" alt="left">
+                    </button>
+                    <div id="lingkaran" class="flex gap-2 items-center">
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-white rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                    </div>
+                    <button id="kanan3" class="btn-arrow">
+                    <img src="src/chevron-right.svg" alt="right">
+                    </button>
+                </div>
+                </div>
+            </div>
+
+            <div id="empat" class="hidden">
+            <div class="container flex flex-col items-center justify-center">
+                <div id="item4" class="container slider-card">
+                    <img src="https:/source.unsplash.com/random/600x500/?idea" alt="idea" width="" class="md:w-1/2 lg:w-1/3 rounded-xl shadow-xl">
+                    <div class="space-y-4 lg:space-y-8 mt-10 md:mt-0">
+                        <!-- List 4 -->
+                        <div class="space-y-4 max-w-md">
+                            <div class="flex space-x-2 items-center justify-center md:justify-start">
+                                <div class="p-2 bg-greenPrime rounded-full shadow-white shadow-sm">
+                                    <img src="src/bulb.svg" alt="innovate" class="lg:w-8 fill-current">
+                                </div>
+                                <h3 class="text-xl font-semibold text-white">Innovative</h3>
+                            </div>
+                            <p class="text-center text-white leading-relaxed px-6 md:px-0 md:text-left lg:text-lg">We innovate in improving our products and services in order to get maximum and satisfying results for our partners.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-8 items-center">
+                    <button id="kiri4" class="btn-arrow ">
+                        <img src="src/chevron-left.svg" alt="left">
+                    </button>
+                    <div id="lingkaran" class="flex gap-2 items-center">
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-slate-800 rounded-full"></div>
+                        <div class="p-2 bg-white rounded-full"></div>
+                    </div>
+                    <button id="kanan4" class="btn-arrow">
+                    <img src="src/chevron-right.svg" alt="right">
+                    </button>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- -------------------------------- -->
+    
+    <!-- Whyus Ends -->
+
+    <!-- fLOWCHART -->
+    <section id="flowchart" class="bg-white justify-center items-center px-6 py-10 lg:py-24">
+        <div class="container items-center flex flex-col gap-4">
+            <h2 class="text-black1 px-6 text-center font-bold text-3xl md:text-4xl md:mb-8">How Do We Export?</h2>
+            <img src="src/export-flow2.png" alt="singkong" width="1000px" class="justify-center">
+        </div>
+    </section>
+    <!-- Flowchart END-->
+
+    <!-- Shipping -->
+    <section id="shipping" class="bg-gradient-to-r from-green-200 to-white justify-center items-center py-10 lg:py-24">
+        <h2 class="text-black1 px-6 text-center font-bold text-3xl md:text-4xl md:mb-8">Shipping and Payment</h2>
+        <div class="container p-6 mx-auto flex flex-col-reverse items-center md:flex-row lg:justify-center space-y-5 md:space-y-0 md:gap-10">
+            <div class="space-y-4 lg:space-y-8 mt-10 md:mt-0">
+                <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl lg:text-4xl ">Shipping</h2>
+                <div class="flex flex-col space-y-0 lg:space-y-2 ">
+                    <h3 class="max-w-md text-black1 font-semibold text-base md:text-xl">EXWORK</h3>
+                    <p class="max-w-md text-base lg:text-lg text-black2 leading-relaxed lg:leading-relaxed">The costs borne by the buyer include delivery costs from our warehouse in Bogor Regency to the buyer’s place.</p>
+                </div>
+                <div class="flex flex-col space-y-0 lg:space-y-2 ">
+                    <h3 class="max-w-md text-black1 font-semibold text-base md:text-xl">FOB</h3>
+                    <p class="max-w-md text-base lg:text-lg text-black2 leading-relaxed lg:leading-relaxed">The costs borne by the buyer include shipping costs when the goods are transported to the ship at the port of Tanjung Priok to the destination country.</p>
+                </div>
+            </div>
+            
+            <img src="https:/source.unsplash.com/random/600x500/?shipping" alt="shipping" width="" class="md:w-1/2 lg:w-1/3 rounded-xl shadow-xl">
+        </div>
+        <div class="container slider-card">
+            <img src="https:/source.unsplash.com/random/600x500/?pay" alt="payment" width="" class="md:w-1/2 lg:w-1/3 rounded-xl shadow-xl">
+            <div class="space-y-4 lg:space-y-8 mt-10 md:mt-0">
+                <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl lg:text-4xl ">Payment</h2>
+                <div class="flex flex-col space-y-0 lg:space-y-2 ">
+                    <h3 class="max-w-md text-black1 font-semibold text-base md:text-xl">Advance Payment</h3>
+                    <p class="max-w-md text-base lg:text-lg text-black2 leading-relaxed lg:leading-relaxed">This advance payment can be made via Telegraphic Transfer (T/T)</p>
+                </div>
+                <div class="flex flex-col space-y-0 lg:space-y-2 ">
+                    <h3 class="max-w-md text-black1 font-semibold text-base md:text-xl">Irrevocable Confirmed L/C</h3>
+                    <p class="max-w-md text-base lg:text-lg text-black2 leading-relaxed lg:leading-relaxed">Payment for this L/C is fully guaranteed by both the exporter’s bank and the importer’s bank</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Whyus Ends -->
 
-    <!-- Payment Terms -->
-    <section id="payment" class="py-4 lg:py-32 my-10 lg:my-24">
-        <div class="container flex flex-col px-6 mx-auto space-y-8 justify-center items-center md:space-y-16">
-            <h2 class=" text-black1 font-bold text-center text-3xl md:text-left md:text-4xl ">Payment & Delivery Terms</h2>
-            <div class="flex flex-col px-6 space-y-6 md:px-0 lg:space-y-0 lg:space-x-10 lg:flex-row">
+
+
+    </section>
+    <!-- Shipping END-->
+
+    <!-- How TO ORDERE -->
+    <section id="Order" class="bg-gradient-to-l from-green-200 to-white  py-4 lg:py-24">
+        <div class="container flex flex-col px-6 mx-auto my-10 space-y-8 justify-center items-center md:space-y-16">
+            <h2 class=" text-black1 font-bold text-center text-3xl md:text-left md:text-4xl">How To Order</h2>
+            <div class="flex flex-col space-y-6 md:px-0 lg:space-y-0 lg:space-x-10 lg:flex-row">
                 <div class=" flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10">
                     <div class="flex flex-col justify-center md:justify-between ">
                         <div class="flex flex-col space-y-2 lg:space-y-3 ">
-                            <img src="src/wallet-fill.svg" alt="whatsap" class="w-10">
-                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">Payment Lorem, ipsum dolor.</h2>
-                            <p class="max-w-md text-base  text-black3 leading-relaxed lg:leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque?</p>
+                            <img src="src/chat-fill.svg" alt="whatsap" class="w-10">
+                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">Contact</h2>
+                            <p class="max-w-md text-base  text-black2 leading-relaxed lg:leading-relaxed">You can call or send a message to our team to place an order via Whatsapp or email</p>
                         </div>
                     </div>
                     <div class="flex flex-col justify-center md:justify-between ">
                         <div class="flex flex-col space-y-2 lg:space-y-3 ">
-                            <img src="src/wallet-fill.svg" alt="whatsap" class="w-10">
-                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">Payment Lorem, ipsum dolor.</h2>
-                            <p class="max-w-md text-base  text-black3 leading-relaxed lg:leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque?</p>
+                            <img src="src/service-fill.svg" alt="whatsap" class="w-10">
+                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">Negotiation</h2>
+                            <p class="max-w-md text-base  text-black2 leading-relaxed lg:leading-relaxed">The selling price can be negotiated according to the agreement of both parties.</p>
                         </div>
                     </div>
                 </div>
                 <div class=" flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10">
                     <div class="flex flex-col justify-center md:justify-between ">
                         <div class="flex flex-col space-y-2 lg:space-y-3 ">
-                            <img src="src/wallet-fill.svg" alt="whatsap" class="w-10">
-                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">Payment Lorem, ipsum dolor.</h2>
-                            <p class="max-w-md text-base  text-black3 leading-relaxed lg:leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, Lorem ipsum dolor sit amet. </p>
+                            <img src="src/file-3-fill.svg" alt="whatsap" class="w-10">
+                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">MoU</h2>
+                            <p class="max-w-md text-base  text-black2 leading-relaxed lg:leading-relaxed">Preparation of cooperation documents between buyers and sellers in accordance with mutually agreed terms.</p>
                         </div>
                     </div>
                     <div class="flex flex-col justify-center md:justify-between ">
                         <div class="flex flex-col space-y-2 lg:space-y-3 ">
-                            <img src="src/wallet-fill.svg" alt="whatsap" class="w-10">
-                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">Payment Lorem, ipsum dolor.</h2>
-                            <p class="max-w-md text-base  text-black3 leading-relaxed lg:leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cumque?</p>
+                            <img src="src/bank-card-fill.svg" alt="whatsap" class="w-10">
+                            <h2 class="max-w-md text-black1 font-semibold text-xl md:text-2xl ">Payment</h2>
+                            <p class="max-w-md text-base  text-black2 leading-relaxed lg:leading-relaxed">Payment is made when the goods ordered will be shipped</p>
                         </div>
                     </div>
                 </div>
@@ -214,27 +455,10 @@
     </section>
     <!-- Payment Terms Ends -->
 
-    <!-- About Us -->
-    <section id="about" class="py-4 lg:py-16 my-10 lg:my-24">
-        <div class="container flex flex-col px-6 mx-auto my-10 space-y-8 justify-center md:space-y-16">
-            <h2 class=" text-black1 font-bold text-center text-3xl md:text-4xl ">About Us</h2>
-            <div class="flex flex-col px-6 mx-auto items-center justify-between md:gap-10 lg:gap-16 md:px-8 md:flex-row">
-                    <!-- Image -->
-                    <div class=" items-center flex justify-center md:w-1/2  md:justify-end ">
-                        <img src="src/logo/logo.svg" alt="singkong" width="" class="flex w-3/4 xl:w-4/5">
-                    </div>
-                    <div class=" flex flex-col space-y-4 text-center mt-5 md:mt-0 md:w-1/2 md:text-left">
-                        <h2 class="font-bold text-2xl md:text-3xl lg:text-6xl text-black1">PT. Frimantara Agrinatural</h2>
-                        <p class="max-w-full text-lg leading-relaxed lg:leading-relaxed lg:text-2xl text-black3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae consectetur fugit adipisci dolorum similique molestiae maxime dolorem nam neque ab?</p>
-                    </div>
-                    <!-- Description -->
-                </div>
-        </div>
-    </section>
-    <!-- About Us End-->
+
 
     <!-- FAQ -->
-    <section id="faq" class="bg-bgPage mt-10 py-14 lg:py-24 lg:mt-24 space-y-8 md:space-y-16 justify-center">
+    <section id="faq" class="py-14 lg:py-24 space-y-8 md:space-y-16 justify-center">
         <h2 class=" text-black1 font-bold text-center text-3xl md:text-4xl ">FAQ</h2>
         <div class="px-6 grid items-center md:place-items-center">
             <div class="w-full  max-w-3xl space-y-2 lg:space-y-4 p-4">
@@ -257,17 +481,17 @@
                 <p class="mt-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, vero.</p>
               </details>
             </div>
-          </div>
+        </div>
     </section>
     <!-- FAQ Ends-->
 
     <!-- CTA 2 -->
-    <section id="cta" class="bg-greenTertiary py-4 lg:py-24">
+    <section id="cta" class="bg-green-200 py-4 lg:py-24">
         <div class="container flex flex-col px-6 mx-auto my-10 space-y-8 text-center justify-center md:space-y-16">
             <h2 class="font-bold text-2xl text-center md:text-3xl lg:text-4xl text-black1">
                 Provide Best Quality of Cassava For You
             </h2>
-            <p class="max-w-full text-lg leading-relaxed lg:leading-relaxed lg:text-2xl text-black3 md:px-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam soluta molestiae rem facere perspiciatis praesentium at dolorem ratione amet obcaecati.</p>
+            <p class="max-w-full text-lg leading-relaxed lg:leading-relaxed lg:text-2xl text-black2 md:px-10">We provide various products from cassava, from whole cassava, cassava chips to cassava flour</p>
             <div class="flex justify-center" >
                 <a href="#" class="bg-greenSecond flex text-center baseline items-center lg:text-xl px-6 py-3 lg:px-9 lg:py-5 rounded-full font-semibold gap-2.5 hover:bg-greenPrime transition  duration-300 ease-in text-white"> 
                     <img src="src/whatsapp-line.svg" alt="whatsap" class="lg:w-8">
@@ -282,12 +506,29 @@
     <section id="footter" class="bg-darkGreen py-4 lg:py-16">
         <div class="container  flex flex-col px-6 mx-auto my-10 space-y-8 justify-between md:space-y-0 text-white md:px-20 lg:px-32 md:flex-row md:space-x-16">
             <div class=" flex flex-col md:flex-row space-y-2 md:space-y-0 lg:space-x-2 lg:w-1/2">
-                <div class="-ml-4 md:ml-0">
+                <div class="-ml-4 md:ml-0 lg:-mt-2">
                     <img src="src/logo/logo-white.svg" alt="singkong" width="100px" class="">
                 </div>
                 <div class="space-y-2">
                     <h3 class="font-semibold text-lg lg:text-xl">PT. Frimantara Agrinatural</h3>
-                    <p class=" max-w-xs font-light text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, adipisci.</p>
+                    <p class=" max-w-xs font-light text-sm">Send Best Cassava To You</p>
+                    <div class="container">
+                        <div class="flex items-center">
+                              <!-- Linked In -->
+                            <a class="w-10 h-10 mr-2 rounded-lg flex justify-center items-center bg-white text-greenPrime hover:bg-greenSecond hover:text-white transition duration-700" href="https://www.linkedin.com/in/frimantara-agrinatural-b9a098259" target="_blank" >
+                                <svg role="img" width="28" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>         
+                              <!-- Facebook -->
+                            <a class="w-10 h-10 mr-2 rounded-lg flex justify-center items-center bg-white text-greenPrime hover:bg-greenSecond hover:text-white transition duration-700" href="https://instagram.com/frimantara.id?igshid=YmMyMTA2M2Y=" target="_blank" >
+                                <svg role="img" width="28" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>         
+                              <!-- Insta -->
+                            <a class="w-10 h-10 mr-2 rounded-lg flex justify-center items-center bg-white text-greenPrime hover:bg-greenSecond hover:text-white transition duration-700" href="https://instagram.com/frimantara.id?igshid=YmMyMTA2M2Y=" target="_blank" >
+                                <svg role="img" width="28" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                            </a>         
+
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="space-y-2 lg:w-1/3 ">
@@ -304,6 +545,8 @@
     </section>
     <!-- Footer Ends -->
     <script src="js/script.js"></script>
+    
+
 </body>
 </html>
 <!-- --> 

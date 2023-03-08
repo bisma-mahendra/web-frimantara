@@ -5,6 +5,34 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
+@layer components{
+ .slider-card {
+  @apply p-6 mx-auto flex flex-col items-center md:flex-row lg:justify-center space-y-5 md:space-y-0 md:gap-10;
+ }
+ .btn-arrow{
+  @apply bg-white rounded-full p-1 hover:scale-105 transition;
+ }
+ .nav-hover{
+  @apply hover:font-semibold hover:decoration-2 hover:decoration-greenPrime hover:underline hover:underline-offset-8 delay-75 transition duration-100 ease-in;
+ }
+ .crum-hover{
+  @apply hover:text-greenPrime hover:decoration-2 hover:decoration-greenPrime hover:underline hover:underline-offset-2 delay-75 transition duration-100 ease-in;
+ }
+ .detail-btn{
+  @apply bg-greenSecond py-3 rounded-lg flex items-center justify-center hover:bg-greenPrime transition  duration-300 ease-in;
+ }
+ .product-card{
+  @apply container shadow-lg rounded-xl overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-56 lg:w-80 hover:shadow-green-200 hover:scale-105 transition;
+ }
+}
+
+.heading-custom{
+  padding: 16px 24px;
+  width: 157px;
+  height: 57px;
+  background: #014C1B;
+}
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
@@ -20,7 +48,7 @@ body {
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: white;
+  background-color: #002C1C;
   border-radius: 100px;
   transform: rotate(0);
   transition: all 0.5s;
@@ -48,4 +76,10 @@ body {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* Whatsapp */
+.fix {
+  position: fixed;
+  z-index: 10;
 }
