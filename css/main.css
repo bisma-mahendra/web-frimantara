@@ -824,7 +824,7 @@ video {
 
 .img-product {
   height: 18rem;
-  width: 100vw;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
