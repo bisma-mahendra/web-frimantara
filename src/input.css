@@ -28,7 +28,7 @@ body {
   @apply shadow-lg rounded-xl overflow-hidden bg-white w-72 h-72 md:w-60 md:h-60 lg:w-80 lg:h-80;
  }
  .img-product{
-  @apply  w-full h-72 md:w-full md:h-60 lg:w-80 lg:h-80;
+  @apply  w-screen h-72 md:w-full md:h-60 lg:w-80 lg:h-80;
  }
  .img-display{
   @apply shadow-lg rounded-xl overflow-hidden bg-white w-80 h-80 md:w-52 md:h-52 lg:w-80 lg:h-80;
