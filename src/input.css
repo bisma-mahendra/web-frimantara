@@ -24,6 +24,16 @@ body {
  .product-card{
   @apply container shadow-lg rounded-xl overflow-hidden mb-10 bg-white sm:mb-0 sm:w-64 md:w-56 lg:w-80 hover:shadow-green-200 hover:scale-105 transition;
  }
+ .img-square{
+  @apply shadow-lg rounded-xl overflow-hidden bg-white w-72 h-72 md:w-60 md:h-60 lg:w-80 lg:h-80;
+ }
+ .img-product{
+  @apply w-72 h-72 md:w-60 md:h-60 lg:w-80 lg:h-80;
+ }
+ .img-display{
+  @apply shadow-lg rounded-xl overflow-hidden bg-white w-80 h-80 md:w-52 md:h-52 lg:w-80 lg:h-80;
+ }
+ 
 }
 
 .heading-custom{
