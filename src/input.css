@@ -33,6 +33,9 @@ body {
  .img-display{
   @apply shadow-lg rounded-xl overflow-hidden bg-white w-80 h-80 md:w-52 md:h-52 lg:w-80 lg:h-80;
  }
+ .img-gallery{
+  @apply shadow-xl rounded-xl overflow-hidden bg-white w-full h-full md:w-60 md:h-60 lg:w-72 lg:h-72 hover:shadow-green-200 hover:scale-105 transition;
+ }
  
 }
 
